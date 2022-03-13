@@ -1,6 +1,6 @@
 <?php 
 
-	$sql="SELECT `Id`,`price`,`title`,`details` FROM `images`";
+	$sql="SELECT `Id`,`title`,`details`,`price` FROM `images`";
 
 	$xx = mysqli_query($con,$sql);	
 		

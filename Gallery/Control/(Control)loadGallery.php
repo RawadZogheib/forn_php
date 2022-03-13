@@ -17,7 +17,7 @@ require $locGetgallery;
 if(mysqli_num_rows($xx)>0){
     $t = 1;
     while($res = mysqli_fetch_assoc($xx)){
-        $Images[] = array($res["Id"],$res["price"],$res["title"],$res["details"]);
+        $Images[] = array($res["Id"],$res["title"],$res["details"],$res["price"]);
     }	
 }else  if(mysqli_num_rows($xx) == 0){
     $t = 2;
